@@ -1,0 +1,149 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: linear-gradient(334deg, #6b97f7, #2557e2);
+}
+
+h1{
+    font-size: 2em;
+}
+h2{
+    font-size: 1.8em;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 1400px;
+    margin: auto;
+}
+h3{
+    font-size: 1.5em;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 1400px;
+    margin: auto;
+}
+p{
+    font-size: 1em;
+    max-width: 1400px;
+    margin: auto;
+    line-height: 1.8em;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 1em;
+}
+
+header {
+    background: linear-gradient(334deg, #6b97f7, #2557e2, #1d0d49);
+      background-size: 180% 180%;
+  }
+
+.contenedor{
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1400px;
+}
+
+.logo{
+    margin: 0;
+    padding: 5px 30px;
+    font-weight: bold;
+    color: rgb(196, 195, 216);
+    font-size: 1.5em;
+}
+
+header nav{
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    padding: 5px 30px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(228, 222, 222);
+    font-size: 1.1em;
+}
+
+header a:hover{
+    color: rgb(45, 33, 218);
+}
+
+.titulo {
+    text-align: center;
+}
+
+ul{
+    margin: auto;
+    max-width: 1400px;
+    font-size: 1em;
+    padding-left: 80px;
+    padding-bottom: 15px;
+}
+
+li{
+    padding-bottom: 10px;
+    line-height: 1.7em;
+}
+
+pre {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+    padding-right: 40px;
+    margin: auto;
+    max-width: fit-content;
+    border-radius: 15px;
+  }
+  
+code{
+    color: white;
+    font-size: 1.1em;
+  }
+
+  footer {
+    background: linear-gradient(334deg, #6b97f7, #2557e2, #1d0d49);
+      background-size: 180% 180%;
+  }
+  
+  footer p {
+    margin: 0;
+    padding: 12px;
+  }
+  
+  footer .container {
+    color: rgb(245, 245, 245);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+.iconos{
+    display: flex;
+    height: 150px;
+    column-gap: 25px;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  .icono{
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    outline: 2px solid #fff;
+    transition-duration: 0.25s;
+    padding: 10px;
+  }
+  
+  .icono:hover{
+    outline-offset: 4px;
+  }

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programacion WEB</title>
+    <link rel="stylesheet" href="css/pagHTML.css" />
+    <link rel="shortcut icon" href="img/icon.png">
+  </head>
+  <body>
+    <header>
+      <div class="contenedor">
+        <a href="index.html"><p class="logo">Programacion WEB</p></a>
+        <nav>
+          <a href="pagHTML.html">HTML</a>
+          <a href="#">CSS</a>
+          <a href="#">JAVASCRIPT</a>
+        </nav>
+      </div>
+    </header>
+    <h1 class="titulo">HTML</h1>
+    <h2>Introduccion a HTML</h2>
+    <p>
+      El lenguaje HTML (HyperText Markup Language) es la base fundamental de
+      todo sitio web y la piedra angular del desarrollo web. Es el lenguaje
+      utilizado para describir la estructura y el contenido de las páginas web,
+      permitiendo a los navegadores interpretar y mostrar el contenido de manera
+      adecuada.
+    </p>
+    <p>
+      En esta era digital,<strong
+        >dominar HTML es esencial para cualquier persona que desee incursionar
+        en el mundo del diseño y desarrollo web</strong
+      >, ya que es la base sobre la cual se construyen otros lenguajes y
+      tecnologías web, como CSS y JavaScript.
+    </p>
+    <p>
+      El objetivo de este artículo es proporcionar una visión completa y
+      detallada del lenguaje HTML, desde sus orígenes y evolución hasta las
+      etiquetas, atributos y conceptos clave que todo desarrollador debe
+      conocer.
+    </p>
+    <p>
+      Además, se abordarán temas como la accesibilidad, el SEO y las tendencias
+      actuales en el desarrollo web relacionadas con HTML. Al final de este
+      artículo, el lector tendrá una comprensión sólida de los fundamentos de
+      HTML y estará mejor preparado para continuar explorando y profundizando en
+      este apasionante lenguaje de marcado.
+    </p>
+    <h2>Historia de HTML</h2>
+    <p>
+      Para comprender mejor el lenguaje HTML y su relevancia en el desarrollo
+      web, es importante conocer sus orígenes y cómo ha evolucionado a lo largo
+      de los años.
+    </p>
+    <h3>1&#41; Orígenes y evolución</h3>
+    <p>
+      La historia de HTML se remonta a 1989, cuando Tim Berners-Lee, un
+      científico de la computación que trabajaba en el CERN (Organización
+      Europea para la Investigación Nuclear), propuso un sistema para compartir
+      documentos e información a través de una red de computadoras.
+    </p>
+    <p>
+      Este sistema, conocido como la
+      <strong
+        >World Wide Web, se basaba en el concepto de hipertexto, que permitía
+        enlazar documentos entre sí</strong
+      >mediante referencias (hipervínculos).
+    </p>
+    <p>
+      El primer prototipo de HTML fue creado por Berners-Lee en 1990. Desde
+      entonces, HTML ha pasado por varias revisiones y actualizaciones, siendo
+      la versión más reciente HTML5.
+    </p>
+    <p>
+      A continuación, se presenta un breve resumen de las versiones más
+      importantes de HTML:
+    </p>
+    <ul>
+      <li>
+        <strong>HTML 1.0 (1991): </strong>
+        La primera versión oficial de HTML, aunque con un conjunto limitado de
+        etiquetas y funcionalidades.
+      </li>
+      <li>
+        <strong>HTML 2.0 (1995): </strong>
+        Mejoras en la estructura del documento y la inclusión de formularios.
+      </li>
+      <li>
+        <strong>HTML 3.2 (1997): </strong>
+        Introducción de elementos como tablas y la posibilidad de agregar
+        estilos al texto.
+      </li>
+      <li>
+        <strong>HTML 4.0 (1997) y HTML 4.01 (1999): </strong>
+        Mayor énfasis en la separación entre contenido y estilo, incorporación
+        de elementos semánticos y mejoras en la accesibilidad.
+      </li>
+      <li>
+        <strong>HTML5 (2014): </strong>
+        La versión actual y más avanzada de HTML, con numerosas mejoras en la
+        semántica, la inclusión de etiquetas para multimedia y la compatibilidad
+        con dispositivos móviles.
+      </li>
+    </ul>
+    <h3>2&#41; Tim Berners-Lee y el CERN</h3>
+    <p>
+      Tim Berners-Lee es considerado el «padre» de la World Wide Web y el
+      creador de HTML. En el CERN, Berners-Lee desarrolló las ideas
+      fundamentales que darían lugar a la Web y HTML, incluyendo conceptos como
+      URL (Uniform Resource Locator) y HTTP (Hypertext Transfer Protocol).
+    </p>
+    <p>
+      El CERN desempeñó un papel crucial en la popularización de la Web y, en
+      consecuencia, en la adopción de HTML como estándar para la creación de
+      páginas web.
+    </p>
+    <h3>3&#41; El papel del World Wide Web Consortium (W3C)</h3>
+    <p>
+      El World Wide Web Consortium (W3C) es una organización internacional que
+      se encarga de desarrollar y mantener los estándares y directrices para la
+      Web, incluyendo HTML.
+    </p>
+    <p>
+      Fundado en 1994 por Tim Berners-Lee, el
+      <strong
+        >W3C ha sido responsable de definir las especificaciones de las
+        diferentes versiones de HTML y garantizar la interoperabilidad</strong
+      >
+      y el consenso entre los desarrolladores y fabricantes de navegadores.
+    </p>
+    <p>
+      Además, el W3C trabaja en la promoción de la accesibilidad web y en la
+      investigación de tecnologías emergentes relacionadas con la Web.
+    </p>
+    <h2>Conceptos básicos de HTML</h2>
+    <p>
+      Antes de adentrarnos en los detalles de HTML, es fundamental comprender
+      algunos conceptos clave que son la base de este lenguaje de marcado.
+    </p>
+    <p>
+      A continuación, se presentan los conceptos básicos que todo desarrollador
+      web debe conocer:
+    </p>
+    <h3>1&#41; Elementos, etiquetas y atributos</h3>
+    <p>
+      HTML está compuesto por elementos que representan diferentes tipos de
+      contenido, como texto, imágenes, enlaces, listas, etc. Estos elementos se
+      definen mediante etiquetas que indican al navegador cómo interpretar y
+      mostrar el contenido.
+    </p>
+    <p>
+      Las etiquetas suelen venir en pares, con una etiqueta de apertura y una de
+      cierre, aunque algunas etiquetas no requieren una etiqueta de cierre, como
+      <strong>&#60;img&#62;</strong> o <strong>&#60;br&#62;</strong>.
+    </p>
+    <p>
+      Los atributos proporcionan información adicional sobre los elementos y
+      permiten modificar su comportamiento o apariencia. Por ejemplo, el
+      atributo src en la etiqueta <strong>&lt;img&gt;</strong> indica la URL de
+      la imagen a mostrar.
+    </p>
+    <h3>2&#41; Estructura básica de un documento HTML</h3>
+    <pre><code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="es"&gt;
+        &lt;head&gt;
+          &lt;meta charset="UTF-8"&gt;
+          &lt;title&gt;Título de la página&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+          &lt;!-- Contenido principal de la página --&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </code></pre>
+    <ul>
+      <li>
+        <strong>&lt;!DOCTYPE html&gt;:</strong> Indica al navegador la versión
+        de HTML que se está utilizando, en este caso, HTML5.
+      </li>
+      <li>
+        <strong>&lt;html&gt;:</strong> Define el inicio y el fin del documento
+        HTML.
+      </li>
+      <li>
+        <strong>&lt;head&gt;:</strong> Contiene información sobre el documento,
+        como su codificación de caracteres, el título de la página y enlaces a
+        hojas de estilo o scripts.
+      </li>
+      <li>
+        <strong>&lt;body&gt;:</strong> Contiene el contenido principal de la
+        página web, como texto, imágenes, enlaces y otros elementos.
+      </li>
+    </ul>
+    <h3>3&#41; Ejemplo de código HTML básico</h3>
+    <p>
+      A continuación, se presenta un ejemplo básico de código HTML que muestra
+      cómo se pueden utilizar elementos, etiquetas y atributos para crear una
+      página web simple:
+    </p>
+    <pre><code>
+      &lt;!DOCTYPE html&gt;
+      &lt;html lang="es"&gt;
+      &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;title&gt;Ejemplo básico de HTML&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+        &lt;h1&gt;¡Hola, mundo!&lt;/h1&gt;
+        &lt;p&gt;Este es un ejemplo básico de una página web creada con HTML.&lt;/p&gt;
+        &lt;p&gt;Visita &lt;a href="https://www.example.com"&gt;nuestro sitio web&lt;/a&gt; para obtener más información.&lt;/p&gt;
+        &lt;img src="imagen.jpg" alt="Una descripción de la imagen"&gt;
+      &lt;/body&gt;
+      &lt;/html&gt;
+    </code></pre>
+    <p>
+      Este ejemplo muestra cómo se pueden combinar diferentes elementos y
+      atributos de HTML para crear una página web con texto, enlaces e imágenes.
+    </p>
+    <p>
+      A medida que profundices en HTML, aprenderás más etiquetas y atributos que
+      te permitirán crear páginas web más complejas y funcionales.
+    </p>
+    <h2>Etiquetas y atributos comunes en HTML</h2>
+    <p>
+      A continuación, se presentan algunas de las etiquetas y atributos más
+      comunes que se utilizan en HTML para estructurar y dar formato al
+      contenido de una página web:
+    </p>
+    <h3>1&#41; Etiquetas de encabezado:</h3>
+    <p>
+      Los encabezados son utilizados para definir títulos y subtítulos en el
+      contenido. Existen seis niveles de encabezados, desde &lt;h1&gt; hasta
+      &lt;h6&gt;, siendo &lt;h1&gt; el más importante y &lt;h6&gt; el menos
+      importante.
+    </p>
+    <pre><code>
+      &lt;h1&gt;Encabezado de nivel 1&lt;/h1&gt;
+      &lt;h2&gt;Encabezado de nivel 2&lt;/h1&gt;
+      &lt;h3&gt;Encabezado de nivel 3&lt;/h1&gt;
+      ...
+    </code></pre>
+    <h3>2&#41; Etiqueta de párrafo:</h3>
+    <p>
+      El elemento &lt;p&gt; se utiliza para definir párrafos en el contenido.
+    </p>
+    <pre><code>
+      &lt;p&gt;Este es un párrafo de ejemplo en HTML.&lt;/p&gt;
+    </code></pre>
+    <h3>3&#41; Etiqueta de enlace:</h3>
+    <p>
+      El elemento &lt;a&gt; se utiliza para crear enlaces (hipervínculos) a
+      otros documentos o recursos. El atributo href especifica la URL del
+      recurso enlazado.
+    </p>
+    <pre><code>
+      &lt;a href="https://www.example.com">Visita nuestro sitio web&lt;/a&gt;
+    </code></pre>
+    <h3>4&#41; Etiqueta de imagen:</h3>
+    <p>
+      El elemento &lt;img&gt; se utiliza para insertar imágenes en la página
+      web. El atributo src especifica la URL de la imagen y el atributo alt
+      proporciona una descripción de la imagen para fines de accesibilidad.
+    </p>
+    <pre><code>
+      &lt;img src="imagen.jpg" alt="Descripción de la imagen"&gt;
+    </code></pre>
+    <h3>5&#41; Etiquetas de listas:</h3>
+    <p>
+      HTML proporciona dos tipos de listas: ordenadas y desordenadas. Las listas
+      ordenadas (&lt;ol&gt;) utilizan números o letras para enumerar los
+      elementos, mientras que las listas desordenadas (&lt;ul&gt;) utilizan
+      marcadores.&lt;/p&gt;
+    </p>
+    <h3>6&#41; Etiquetas de tablas:</h3>
+    <p>
+      Las tablas se utilizan para organizar y presentar datos en filas y
+      columnas. Los elementos &lt;table&gt;, &lt;tr&gt;, &lt;th&gt; y &lt;td&gt;
+      se utilizan para crear la estructura de una tabla.
+    </p>
+    <pre><code>
+      &lt;table&gt;
+        &lt;tr&gt;
+          &lt;th&gt;Encabezado 1&lt;/th&gt;
+          &lt;th&gt;Encabezado 2&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;th&gt;Dato 1&lt;/th&gt;
+          &lt;th&gt;Dato 2&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    </code></pre>
+    <h3>7&#41; Etiquetas de formularios:</h3>
+    <p>
+      Los formularios se utilizan para recopilar datos del usuario. El elemento
+      &lt;form&gt; define el formulario, mientras que otros elementos, como
+      &lt;sas&gt;, &lt;textarea&gt; y &lt;select&gt;, se utilizan para crear
+      campos de entrada de datos.
+    </p>
+    <pre><code>
+      &lt;form action="procesar.php" method="post"&gt;
+        &lt;label for="nombre"&gt;Nombre:&lt;/label&gt;
+        &lt;input type="text" id="nombre" name="nombre"&gt;
+        &lt;input type="submit" value="Enviar"&gt;
+      &lt;/form&gt;
+    </code></pre>
+    <h3>8&#41; Etiquetas semánticas:</h3>
+    <p>
+      Estas etiquetas (&lt;header>, &lt;footer&gt;, &lt;nav&gt;,
+      &lt;article&gt;, &lt;section&gt;, &lt;aside&gt;) proporcionan información
+      adicional sobre la estructura y el propósito del contenido en una página
+      web. Ayudan a mejorar la accesibilidad y facilitan el trabajo con hojas de
+      estilo y scripts.
+    </p>
+    <h3>9&#41; Atributos comunes:</h3>
+    <ul>
+      <li>
+        <strong>id: </strong>El atributo id se utiliza para asignar un
+        identificador único a un elemento HTML. Este identificador puede ser
+        utilizado para aplicar estilos CSS específicos a un elemento o para
+        manipularlo con JavaScript. Es importante tener en cuenta que cada id
+        debe ser único dentro de un documento HTML.
+      </li>
+      <pre class="cod"><code>
+        &lt;p id="primer-parrafo"&gt;Este es el primer párrafo.&lt;/p&gt;
+      </code></pre>
+      <li>
+        <strong>class: </strong>El atributo class permite asignar una o más
+        clases a un elemento HTML. Las clases se utilizan comúnmente para
+        aplicar estilos CSS a varios elementos que comparten características
+        similares. A diferencia del atributo id, una misma clase puede asignarse
+        a varios elementos.
+      </li>
+      <pre class="cod"><code>
+        &lt;p class="texto-destacado"&gt;Este es un párrafo destacado.&lt;/p&gt;
+        &lt;p class="texto-destacado"&gt;Este también es un párrafo destacado.&lt;/p&gt;
+      </code></pre>
+      <li>
+        <strong>style: </strong>El atributo style permite aplicar estilos CSS
+        directamente a un elemento HTML. Aunque es posible utilizar style para
+        aplicar estilos, generalmente se recomienda utilizar hojas de estilo
+        externas o internas para mantener la separación entre el contenido y la
+        presentación.
+      </li>
+      <pre class="cod"><code>
+        &lt;p style="color: red; font-weight: bold;"&gt;Este párrafo tiene estilos en línea.&lt;/p&gt;
+      </code></pre>
+    </ul>
+    <footer>
+      <div class="iconos">
+        <img src="img/tik-tok.png" alt="" class="icono">
+        <img src="img/facebook.png" alt="" class="icono">
+        <img src="img/linkedin.png" alt="" class="icono">
+        <img src="img/github.png" alt="" class="icono">
+      </div>
+      <div class="container">
+        <p>&copy; Programacion WEB</p>
+      </div>
+    </footer>
+  </body>
+</html>
